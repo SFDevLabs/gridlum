@@ -63,6 +63,7 @@ exports.new = function(req, res){
  */
 
 exports.create = function (req, res) {
+  console.log(req.files)
   var article = new Article(req.body)
   article.user = req.user
 
